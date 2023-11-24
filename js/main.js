@@ -53,6 +53,7 @@ $('form').on('submit', function(event) { //Evitando que o formulário carregue//
     });
     if ($(this).valid()) {
         alert('Cadastrado com sucesso')
+        this.reset(); // Limpa o formulário depois do user dar ok
     }
 });
 
